@@ -7,5 +7,5 @@ app
     port: env.PORT,
   })
   .then(() => {
-    console.log('🚀 listening on port 3333 🔥🔥');
+    console.log(`🔥 Listening on port ${env.PORT} 🔥`);
   });
