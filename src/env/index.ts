@@ -6,7 +6,6 @@ const envSchema = z.object({
     .enum(['development', 'test', 'production'])
     .default('development'),
   PORT: z.coerce.number().default(4000),
-  HASH_SALT: z.coerce.number().default(6),
 });
 
 const _env = envSchema.safeParse(process.env);
